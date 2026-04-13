@@ -45,9 +45,6 @@ def view_settings(dictionary):
                 if i == 1:
                     return_str = return_str + item[i] + '\n'                    
     return return_str
-print(repr(view_settings({'theme': 'dark', 'notifications': 'enabled', 'volume': 'high'})))
-print(repr("Current User Settings:\nTheme: dark\nNotifications: enabled\nVolume: high\n"))
 settings_in_test = {"theme": "light", "language": "English", "notifications": "enabled"}
 result = view_settings(settings_in_test)
 print(result)
-print(repr("Current User Settings:\nTheme: light\nLanguage: English\nNotifications: enabled\n"))
